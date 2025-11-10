@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class Player
 {
+   Scanner sc = new Scanner(System.in);
+
   /* your code here - attributes */
   private String name;
   private int points; 
@@ -14,8 +16,16 @@ public class Player
   /* your code here - constructor(s) */ 
   public Player()
   {
-    String name = scanner.nextLine();
-    System.out.println("Enter your age: ");
+    String name = sc.nextLine();
+    System.out.println("Welcome to the game, " + name);
+    points = 0;
+  }
+
+  public Player(String inputName)
+  {
+    String name = sc.nextLine();
+    System.out.println("Welcome to the game, " + name);
+    points = 0;
   }
 
   /* your code here - accessor(s) */ 
