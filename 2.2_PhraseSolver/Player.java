@@ -8,6 +8,10 @@ import java.util.Scanner;
 public class Player
 {
   /* your code here - attributes */
+  private Player player1;
+  private Player player2;
+  private Board game;
+  private boolean solved;
 
   /* your code here - constructor(s) */ 
 
