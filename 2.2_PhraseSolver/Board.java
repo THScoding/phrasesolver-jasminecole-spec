@@ -16,8 +16,9 @@ public class  Board
   public Board()
   {
     solvedPhrase = "";
-    phrase = "";
-    currentLetterValue = 0;
+    phrase = this.loadPhrase();
+    setLetterValue();
+    System.out.println("Phrase: " + phrase); //temp test code
   }
   
   /* your code here - accessor(s) */

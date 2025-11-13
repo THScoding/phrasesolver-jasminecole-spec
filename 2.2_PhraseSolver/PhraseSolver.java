@@ -17,9 +17,9 @@ public class PhraseSolver
   /* your code here - constructor(s) */ 
   public PhraseSolver()
   {
-    player1 = null;
-    player2 = null;
-    board = null;
+    player1 = new Player();
+    player2 = new Player();
+    board = new Board(); //check this
     solved = false;
   }
 

@@ -16,14 +16,16 @@ public class Player
   /* your code here - constructor(s) */ 
   public Player()
   {
-    String name = sc.nextLine();
+    System.out.println("Please type a name.");
+    name = sc.nextLine();
     System.out.println("Welcome to the game, " + name);
     points = 0;
   }
 
   public Player(String inputName)
   {
-    String name = sc.nextLine();
+    System.out.println("Please type a name.");
+    name = sc.nextLine();
     System.out.println("Welcome to the game, " + name);
     points = 0;
   }
