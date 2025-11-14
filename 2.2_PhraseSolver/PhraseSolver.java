@@ -35,6 +35,8 @@ public class PhraseSolver
     {
       
       /* your code here - game logic */
+      PhraseSolver p = new PhraseSolver();
+      System.out.println(p.getPlayer()); //i give up
       
       
       /* your code here - determine how game ends */

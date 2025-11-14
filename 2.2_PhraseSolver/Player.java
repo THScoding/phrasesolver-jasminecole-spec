@@ -31,6 +31,15 @@ public class Player
   }
 
   /* your code here - accessor(s) */ 
+  public String getPlayer()
+  {
+    return name;
+  }
+
+  public int getPoints()
+  {
+    return points;
+  }
 
   /* your code here - mutator(s) */ 
 }
