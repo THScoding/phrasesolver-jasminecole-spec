@@ -35,9 +35,16 @@ public class PhraseSolver
     {
       
       /* your code here - game logic */
-      PhraseSolver p = new PhraseSolver();
-      System.out.println(p.getPlayer()); //i give up
-      
+      Player p = new Player();
+      System.out.println(p.getPlayer()); 
+
+      //show partially solved phrase
+      Board b = new Board();
+      System.out.println(b.getSolvedPhrase());
+
+      //show the point value of the next letter guess
+      Player o = new Player();
+      System.out.println(o.getPoints());
       
       /* your code here - determine how game ends */
       solved = true; 
