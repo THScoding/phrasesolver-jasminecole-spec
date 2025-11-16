@@ -19,7 +19,7 @@ public class PhraseSolver
   {
     player1 = new Player();
     player2 = new Player();
-    board = new Board(); //check this
+    board = new Board(); 
     solved = false;
   }
 
@@ -35,17 +35,23 @@ public class PhraseSolver
     {
       
       /* your code here - game logic */
-      // CURRENT GUESSING PLAYER- USE CURRENTPLAYER int
-      Player p = new Player();
-      System.out.println(p.getPlayer()); 
+      
+      if(currentPlayer == 1){
+        System.out.println(player1.getPlayer()); 
+        currentPlayer = 2;
+      }
+      else{
+        System.out.println(player2.getPlayer());
+        currentPlayer = 1;
+      }
+      
+
 
       //show partially solved phrase
-      Board b = new Board();
-      System.out.println(b.getSolvedPhrase());
+      System.out.println(board.getSolvedPhrase());
 
       //show the point value of the next letter guess
-      Player o = new Player();
-      System.out.println(o.getPoints());
+      System.out.println(board.getCurrentLetterValue()); //??????? lowkey fixing this on Monday
       
       /* your code here - determine how game ends */
       solved = true; 
