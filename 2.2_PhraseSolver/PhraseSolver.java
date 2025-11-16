@@ -36,7 +36,7 @@ public class PhraseSolver
       
       /* your code here - game logic */
       // CURRENT GUESSING PLAYER- USE CURRENTPLAYER int
-      PhraseSolver p = new PhraseSolver();
+      Player p = new Player();
       System.out.println(p.getPlayer()); 
 
       //show partially solved phrase
