@@ -52,8 +52,12 @@ public class PhraseSolver
         }
         
         //make substring check for if letter matches with any in code thing
-        currentPlayer = player2;
-      
+        if(currentPlayer = player1){
+          currentPlayer = player2;
+        }
+        else{
+          currentPlayer = player1;
+        }
       
       
 
